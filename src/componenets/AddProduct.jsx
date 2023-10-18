@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import Navbar from "./Navbar";
 
 const AddProduct = () => {
@@ -14,7 +15,29 @@ const AddProduct = () => {
         const photo = form.photo.value;
 
         const newBrand = {name, brand, choose, price, description, photo}
-        console.log(newBrand)
+        console.log(newBrand);
+
+        fetch('http://localhost:5000/brand', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newBrand)
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+
+            if(data.insertedId){
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Add your product has been success',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+        })
     }
 
   return (
