@@ -5,12 +5,41 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Homepage from './Homepage.jsx';
+import Root from './Layout/Root'
+import Homepage from './Homepage';
+import AddProduct from './componenets/AddProduct';
+import MyCart from './componenets/MyCart';
+import Login from './componenets/Login';
+import Register from './componenets/Register';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Homepage></Homepage>,
+    element: <Root></Root>,
+    children: [
+      {
+        path: '/',
+        element: <Homepage></Homepage>,
+        loader: ()=> fetch('/Brand.json')
+      },
+      {
+        path: '/addproduct',
+        element: <AddProduct></AddProduct>
+      },
+      {
+        path: '/mycart',
+        element: <MyCart></MyCart>
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
+      }
+    ]
   },
 ]);
 
