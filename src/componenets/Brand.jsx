@@ -1,20 +1,20 @@
-import { useLoaderData, useParams } from "react-router-dom";
+/* eslint-disable react/prop-types */
 import Navbar from "./Navbar";
 import BrandDtl from "./BrandDtl";
 import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const Brand = () => {
-
-    const brands = useLoaderData();
+    
     const {id} = useParams();
-    const [brand, setBrandCard] = useState([]);
+    const[data, setData] = useState([]);
+    const products = useLoaderData();
 
-    {
-        useEffect(()=> {
-            const findBrand = brand?.find(brand => brand.id == id);
-            setBrandCard(findBrand);
-        },[brand, id]);
-    }
+    useEffect(() => {
+        const findProduct = products?.find(products => products.id == id);
+        setData(findProduct);
+    }, [products, id]);
+    
 
     return (
         <div className="max-w-7xl mx-auto">
@@ -22,8 +22,9 @@ const Brand = () => {
             <h2 className="text-xl lg:text-5xl font-bold italic text-center text-orange-400 my-5">Added Brand Collections</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
-                    brands.map(brand => <BrandDtl key={brand._id} brands={brand}></BrandDtl>)
+                    products?.map(product => <BrandDtl key={product.id} products={product}></BrandDtl>)
                 }
+                
             </div>
             
         </div>

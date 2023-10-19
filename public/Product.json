@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "sm_pic": "https://i.ibb.co/TkbL9D3/mobile.jpg",
+        "name": "Iphone 13 pro max",
+        "brandname": "Apple",
+        "type": "Phone",
+        "price": 120000,
+        "description": "This is best quality"
+    },
+    {
+        "id": 2,
+        "sm_pic": "https://i.ibb.co/bW0B57K/2.jpg",
+        "name": "Apple Ipad",
+        "brandname": "Apple",
+        "type": "Tablet",
+        "price": 25000,
+        "description": "Its not an best but also use in businessman"
+    },
+    {
+        "id": 3,
+        "sm_pic": "https://i.ibb.co/D9ghCHm/3.jpg",
+        "name": "MAC Desktop",
+        "brandname": "Apple",
+        "type": "PC",
+        "price": 110000,
+        "description": "This device is very usefull in the world"
+    },
+    {
+        "id": 4,
+        "sm_pic": "https://i.ibb.co/NmMnRP0/4.jpg",
+        "name": "Apple Leptop",
+        "brandname": "Apple",
+        "type": "Leptop",
+        "price": 100000,
+        "description": "This device use in very smooth"
+    }
+]
