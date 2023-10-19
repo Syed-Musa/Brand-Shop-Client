@@ -12,6 +12,9 @@ import MyCart from './componenets/MyCart';
 import Login from './componenets/Login';
 import Register from './componenets/Register';
 
+import BrandDtl from './componenets/BrandDtl';
+import Brand from './componenets/Brand';
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Homepage></Homepage>,
         loader: ()=> fetch('/Brand.json')
+      },
+      {
+        path: '/brand/:id',
+        element: <Brand></Brand>,
+        loader: ()=> fetch('http://localhost:5000/brand')
       },
       {
         path: '/addproduct',

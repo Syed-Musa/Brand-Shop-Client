@@ -1,20 +1,20 @@
 import Swal from "sweetalert2";
 import Navbar from "./Navbar";
 
-const AddProduct = () => {
+const AddProduct = () => {  
 
     const handleAddBrands = e =>{
         e.preventDefault();
         const form = e.target;
 
         const name = form.name.value;
-        const brand = form.brand.value;
+        const brandname = form.brandname.value;
         const choose = form.choose.value;
         const price = form.price.value;
         const description = form.description.value;
         const photo = form.photo.value;
 
-        const newBrand = {name, brand, choose, price, description, photo}
+        const newBrand = {name, brandname, choose, price, description, photo}
         console.log(newBrand);
 
         fetch('http://localhost:5000/brand', {
@@ -71,7 +71,7 @@ const AddProduct = () => {
             <label className="input-group">
               <input
                 type="text"
-                name="brand"
+                name="brandname"
                 placeholder="brand name"
                 className="input input-bordered w-full"
               />
