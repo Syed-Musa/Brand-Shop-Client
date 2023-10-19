@@ -11,8 +11,6 @@ import AddProduct from './componenets/AddProduct';
 import MyCart from './componenets/MyCart';
 import Login from './componenets/Login';
 import Register from './componenets/Register';
-
-import BrandDtl from './componenets/BrandDtl';
 import Brand from './componenets/Brand';
 
 

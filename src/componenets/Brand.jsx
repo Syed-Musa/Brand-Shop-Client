@@ -11,9 +11,9 @@ const Brand = () => {
 
     {
         useEffect(()=> {
-            const findBrand = brands?.find(brand => brand.id == id);
+            const findBrand = brand?.find(brand => brand.id == id);
             setBrandCard(findBrand);
-        },[brands, id]);
+        },[brand, id]);
     }
 
     return (
