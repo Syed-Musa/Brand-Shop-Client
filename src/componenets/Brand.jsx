@@ -19,12 +19,14 @@ const Brand = () => {
     return (
         <div className="max-w-7xl mx-auto">
             <Navbar></Navbar>
-            <h2 className="text-xl lg:text-5xl font-bold italic text-center text-orange-400 my-5">Added Brand Collections</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {
-                    products?.map(product => <BrandDtl key={product.id} products={product}></BrandDtl>)
-                }
-                
+            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                <h2 className="text-xl lg:text-5xl font-bold italic text-center text-orange-400 my-5">Added Brand Collections</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {
+                        products?.map(product => <BrandDtl key={product.id} products={product}></BrandDtl>)
+                    }
+                    
+                </div>
             </div>
         </div>
     );

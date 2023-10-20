@@ -45,7 +45,7 @@ const UpdateProduct = () => {
     }
 
     return (
-        <div>
+        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
             <Navbar></Navbar>
         <div className="bg-gradient-to-r from-blue-400 to-indigo-300 p-10">
       <h2 className="text-xl lg:text-5xl font-bold italic text-center text-orange-400 my-5">UPDATE PRODUCT</h2>

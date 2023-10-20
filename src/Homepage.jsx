@@ -3,6 +3,8 @@ import Banner from "./componenets/Banner";
 import Brands from "./componenets/Brands";
 import Navbar from "./componenets/Navbar";
 import Footer from "./componenets/Footer";
+import AboutUs from "./componenets/AboutUs";
+import OurFeatured from "./componenets/OurFeatured";
 
 const Homepage = () => {
 
@@ -13,6 +15,8 @@ const Homepage = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <Brands brands={brands}></Brands>
+            <AboutUs></AboutUs>
+            <OurFeatured></OurFeatured>
             <Footer></Footer>
         </div>
     );

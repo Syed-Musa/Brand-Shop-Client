@@ -5,7 +5,7 @@ const BrandsCard = ({brands}) => {
     const {id, brand_image, brand_name} = brands || {}
     console.log(brands)
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
       <Link to={`/brand/${id}`}>
         <div className="card bg-gradient-to-r from-blue-400 to-indigo-300 shadow-xl">
           <figure>

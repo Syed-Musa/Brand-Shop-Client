@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Navbar from "./Navbar";
+import Swal from "sweetalert2";
 
 const User = () => {
   const loadedUser = useLoaderData();
@@ -13,7 +14,13 @@ const User = () => {
     .then(res => res.json())
     .then(data => {
         if(data.deletedCount > 0){
-            console.log('deleted successfully');
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Deleted Successfully',
+                showConfirmButton: false,
+                timer: 1500
+            })
             const remainingUsers = users.filter(user => user._id !== id);
             setUsers(remainingUsers);
         }
@@ -21,7 +28,7 @@ const User = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
         <Navbar></Navbar>
       <h2 className="font-bold text-xl lg:text-5xl italic text-center text-orange-400 my-7">OUR USERS</h2>
       <div className="overflow-x-auto">

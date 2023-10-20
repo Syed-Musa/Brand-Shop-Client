@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="my-10">
+    <div className="my-10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
       <footer className="footer p-10 bg-gradient-to-r from-blue-400 to-indigo-300 text-base-content">
         <aside>
           <p className="text-3xl font-bold italic text-black mt-14">BRAND-SHOPS</p>
