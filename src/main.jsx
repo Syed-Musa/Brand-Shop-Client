@@ -13,6 +13,8 @@ import Login from './componenets/Login';
 import Register from './componenets/Register';
 import Brand from './componenets/Brand';
 import ErrorPage from './componenets/ErrorPage';
+import UpdateProduct from './componenets/UpdateProduct';
+import AuthProvider from './Providers/AuthProvider';
 
 
 const router = createBrowserRouter([
@@ -35,10 +37,16 @@ const router = createBrowserRouter([
         path: '/addproduct',
         element: <AddProduct></AddProduct>
       },
+      
       {
         path: '/mycart',
         element: <MyCart></MyCart>,
-        loader: ()=> fetch('http://localhost:5000/brand')
+        loader: ()=> fetch('http://localhost:5000/mycart')
+      },
+      {
+        path: '/updateProduct/:id',
+        element: <UpdateProduct></UpdateProduct>,
+        loader: ({params})=> fetch(`http://localhost:5000/mycart/${params.id}`)
       },
       {
         path: '/login',
@@ -54,6 +62,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+     <AuthProvider>
      <RouterProvider router={router} />
+     </AuthProvider>
   </React.StrictMode>,
 )

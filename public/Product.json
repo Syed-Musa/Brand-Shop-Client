@@ -34,5 +34,41 @@
         "type": "Leptop",
         "price": 100000,
         "description": "This device use in very smooth"
+    },
+    {
+        "id": 5,
+        "sm_pic": "https://i.ibb.co/1zxkYTV/6.jpg",
+        "name": "Samsung S22 Ultra",
+        "brandname": "Samsung",
+        "type": "Phone",
+        "price": 115000,
+        "description": "This device is best quality of android version"
+    },
+    {
+        "id": 6,
+        "sm_pic": "https://i.ibb.co/yktHPMF/7.jpg",
+        "name": "Smart Watch",
+        "brandname": "Samsung",
+        "type": "Watch",
+        "price": 2200,
+        "description": "This mini device also usefull in long turn travels"
+    },
+    {
+        "id": 7,
+        "sm_pic": "https://i.ibb.co/KKzqxF2/8.jpg",
+        "name": "LED TV",
+        "brandname": "Samsung",
+        "type": "TV",
+        "price": 35000,
+        "description": "It is also usefull electronic device in all family"
+    },
+    {
+        "id": 8,
+        "sm_pic": "https://i.ibb.co/syJGdJY/9.jpg",
+        "name": "Air Condition",
+        "brandname": "Samsung",
+        "type": "AC",
+        "price": 46000,
+        "description": "It is also cold air and uses in summer season"
     }
 ]

@@ -7,12 +7,12 @@ import { useLoaderData, useParams } from "react-router-dom";
 const Brand = () => {
     
     const {id} = useParams();
-    const[data, setData] = useState([]);
+    const[product, setProductsCard] = useState([]);
     const products = useLoaderData();
 
     useEffect(() => {
-        const findProduct = products?.find(products => products.id == id);
-        setData(findProduct);
+        const findProduct = products?.find(product => product.id == id);
+        setProductsCard(findProduct);
     }, [products, id]);
     
 
@@ -26,7 +26,6 @@ const Brand = () => {
                 }
                 
             </div>
-            
         </div>
     );
 };

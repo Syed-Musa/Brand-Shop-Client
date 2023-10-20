@@ -17,7 +17,7 @@ const AddProduct = () => {
         const newBrand = {name, brandname, choose, price, description, photo}
         console.log(newBrand);
 
-        fetch('http://localhost:5000/brand', {
+        fetch('http://localhost:5000/mycart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -32,7 +32,7 @@ const AddProduct = () => {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Add your product has been success',
+                    title: 'Added product has been success',
                     showConfirmButton: false,
                     timer: 1500
                 })
