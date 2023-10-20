@@ -15,6 +15,7 @@ import Brand from './componenets/Brand';
 import ErrorPage from './componenets/ErrorPage';
 import UpdateProduct from './componenets/UpdateProduct';
 import AuthProvider from './Providers/AuthProvider';
+import User from './componenets/User';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
         path: '/updateProduct/:id',
         element: <UpdateProduct></UpdateProduct>,
         loader: ({params})=> fetch(`http://localhost:5000/mycart/${params.id}`)
+      },
+      {
+        path: '/user',
+        element: <User></User>,
+        loader: ()=> fetch('http://localhost:5000/user')
       },
       {
         path: '/login',
