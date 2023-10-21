@@ -1,7 +1,7 @@
 1. Add at least 5 Project Features
 
 
-------------BRAND SHOP-------------
+                       ------------Assignment BRAND SHOPS-------------
 * To begin with i thought it was tougher than in another assignments. Becaouse, this assignment also use in data collect to server side to the side.
 
 * Ok, this come to point. Firstly, i set up in basic porject set up in react, route, firbase and also simple used this assignment like CSS Framework with tailwind css and daisy ui
@@ -13,3 +13,5 @@
 * I don't know if has been. I finished the assignment with a lot of difficulty and i don't know what the result will be come back. After all, i will learn many difficult thing in the milestone
 
 * Finally, i finished this assignment and it just didn't use the data in some place. I have completed this assignment as per my opinion. Best Wishes from PH Team. I can learn a lot from here.
+
+Here is my BRAND-SHOP assignment live site : (https://brand-shop-38e2f.web.app/)
