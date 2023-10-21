@@ -11,13 +11,14 @@ const AddProduct = () => {
         const brandname = form.brandname.value;
         const choose = form.choose.value;
         const price = form.price.value;
+        const rating = form.rating.value;
         const description = form.description.value;
         const photo = form.photo.value;
 
-        const newBrand = {name, brandname, choose, price, description, photo}
+        const newBrand = {name, brandname, choose, price, rating, description, photo}
         console.log(newBrand);
 
-        fetch('http://localhost:5000/mycart', {
+        fetch('https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/mycart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -93,7 +94,6 @@ const AddProduct = () => {
             </label>
           </div>
 
-          
           {/* Price */}
           <div className="form-control">
             <label className="label">
@@ -104,6 +104,21 @@ const AddProduct = () => {
                 type="number"
                 name="price"
                 placeholder="price"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+
+          {/* Rating */}
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text font-bold text-white">rating</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="number"
+                name="rating"
+                placeholder="rating"
                 className="input input-bordered w-full"
               />
             </label>

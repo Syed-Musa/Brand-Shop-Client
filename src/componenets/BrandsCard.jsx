@@ -12,7 +12,7 @@ const BrandsCard = ({brands}) => {
             <img className="h-40 w-full" src={brand_image} alt="Shoes"/>
           </figure>
           <div className="card-body">
-            <h2 className=" text-2xl font-bold italic text-center">{brand_name}</h2>
+            <h2 className=" text-2xl font-bold italic text-center text-white">{brand_name}</h2>
           </div>
         </div>
       </Link>

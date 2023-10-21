@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const UpdateProduct = () => {
 
     const brands = useLoaderData();
-    const {_id, name, brandname, choose, price, description, photo} = brands;
+    const {_id, name, brandname, choose, price, rating, description, photo} = brands;
 
     const handleUpdateBrands = e =>{
         e.preventDefault();
@@ -15,13 +15,14 @@ const UpdateProduct = () => {
         const brandname = form.brandname.value;
         const choose = form.choose.value;
         const price = form.price.value;
+        const rating = form.rating.value;
         const description = form.description.value;
         const photo = form.photo.value;
 
-        const UpdateBrand = {name, brandname, choose, price, description, photo}
+        const UpdateBrand = {name, brandname, choose, price, rating, description, photo}
         console.log(UpdateBrand);
 
-        fetch(`http://localhost:5000/mycart/${_id}`, {
+        fetch(`https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/mycart/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -100,7 +101,6 @@ const UpdateProduct = () => {
             </label>
           </div>
 
-          
           {/* Price */}
           <div className="form-control">
             <label className="label">
@@ -112,6 +112,22 @@ const UpdateProduct = () => {
                 name="price"
                 defaultValue={price}
                 placeholder="price"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+
+          {/* Rating */}
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text font-bold text-white">rating</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="number"
+                name="rating"
+                defaultValue={rating}
+                placeholder="rating"
                 className="input input-bordered w-full"
               />
             </label>

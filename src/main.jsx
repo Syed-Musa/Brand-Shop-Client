@@ -34,6 +34,7 @@ const router = createBrowserRouter([
         element: <Brand></Brand>,
         loader: ()=> fetch('/Product.json')
       },
+      
       {
         path: '/addproduct',
         element: <AddProduct></AddProduct>
@@ -42,17 +43,17 @@ const router = createBrowserRouter([
       {
         path: '/mycart',
         element: <MyCart></MyCart>,
-        loader: ()=> fetch('http://localhost:5000/mycart')
+        loader: ()=> fetch('https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/mycart')
       },
       {
         path: '/updateProduct/:id',
         element: <UpdateProduct></UpdateProduct>,
-        loader: ({params})=> fetch(`http://localhost:5000/mycart/${params.id}`)
+        loader: ({params})=> fetch(`https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/mycart/${params.id}`)
       },
       {
         path: '/user',
         element: <User></User>,
-        loader: ()=> fetch('http://localhost:5000/user')
+        loader: ()=> fetch('https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/user')
       },
       {
         path: '/login',

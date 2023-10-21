@@ -40,7 +40,7 @@ const Login = () => {
         email,
         lastLoggedAt: result.user?.metadata?.lastSignInTime
       }
-      fetch('http://localhost:5000/user', {
+      fetch('https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/user', {
         method: 'PATCH',
         headers: {
           'content-type': 'application/json'
@@ -71,7 +71,7 @@ const Login = () => {
             <form onSubmit={handleLogin} className="card-body ">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-bold">Email</span>
+                  <span className="label-text font-bold text-white">Email</span>
                 </label>
                 <input
                   type="email"
@@ -83,7 +83,7 @@ const Login = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-bold">Password</span>
+                  <span className="label-text font-bold text-white">Password</span>
                 </label>
                 <div className="relative">
                 <input
@@ -100,7 +100,7 @@ const Login = () => {
                 </span>
                 </div>
                 <label className="label">
-                  <a href="#" className="label-text-alt font-bold text-blue-600 italic link link-hover">
+                  <a href="#" className="label-text-alt font-bold text-white  italic link link-hover">
                     Forgot password?
                   </a>
                 </label>
@@ -116,7 +116,7 @@ const Login = () => {
             {
               success && <p className="text-green-600 italic font-bold text-xtext-center">{success}</p>
             }
-              <p className="text-center mt-3">
+              <p className="text-center text-white mt-3">
                 Please go to{" "}
                 <Link to="/register" className="text-blue-700 font-bold">
                   Register

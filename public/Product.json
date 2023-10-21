@@ -6,6 +6,7 @@
         "brandname": "Apple",
         "type": "Phone",
         "price": 120000,
+        "rating": "4.5/5",
         "description": "This is best quality"
     },
     {
@@ -15,6 +16,7 @@
         "brandname": "Apple",
         "type": "Tablet",
         "price": 25000,
+        "rating": "3.5/5",
         "description": "Its not an best but also use in businessman"
     },
     {
@@ -24,6 +26,7 @@
         "brandname": "Apple",
         "type": "PC",
         "price": 110000,
+        "rating": "4/5",
         "description": "This device is very usefull in the world"
     },
     {
@@ -33,6 +36,7 @@
         "brandname": "Apple",
         "type": "Leptop",
         "price": 100000,
+        "rating": "4/5",
         "description": "This device use in very smooth"
     },
     {
@@ -42,6 +46,7 @@
         "brandname": "Samsung",
         "type": "Phone",
         "price": 115000,
+        "rating": "4.5/5",
         "description": "This device is best quality of android version"
     },
     {
@@ -51,6 +56,7 @@
         "brandname": "Samsung",
         "type": "Watch",
         "price": 2200,
+        "rating": "4/5",
         "description": "This mini device also usefull in long turn travels"
     },
     {
@@ -60,6 +66,7 @@
         "brandname": "Samsung",
         "type": "TV",
         "price": 35000,
+        "rating": "4/5",
         "description": "It is also usefull electronic device in all family"
     },
     {
@@ -69,6 +76,127 @@
         "brandname": "Samsung",
         "type": "AC",
         "price": 46000,
+        "rating": "3/5",
         "description": "It is also cold air and uses in summer season"
+    },
+    {
+        "id": 9,
+        "sm_pic": "https://i.ibb.co/R7pYLY9/sony.jpg",
+        "name": "Sony Pixel 9",
+        "brandname": "Sony",
+        "type": "Phone",
+        "price": 37000,
+        "rating": "3.5/5",
+        "description": "There are not a many useful device but its very good device"
+    },
+    {
+        "id": 10,
+        "sm_pic": "https://i.ibb.co/XCxvQDQ/sony-fridge.jpg",
+        "name": "Double Fridge",
+        "brandname": "Sony",
+        "type": "Fridge",
+        "price": 55000,
+        "rating": "4/5",
+        "description": "This electronic device is most usefull in first class family"
+    },
+    {
+        "id": 11,
+        "sm_pic": "https://i.ibb.co/Zcs5Hrq/sony-tv.jpg",
+        "name": "Sony LED",
+        "brandname": "Sony",
+        "type": "TV",
+        "price": 29000,
+        "rating": "3.5/5",
+        "description": "It is also smoothly work but price is so expensive"
+    },
+    {
+        "id": 12,
+        "sm_pic": "https://i.ibb.co/x8tXJFj/sony-adapter.jpg",
+        "name": "Power Adapter",
+        "brandname": "Sony",
+        "type": "Adapter",
+        "price": 4400,
+        "rating": "2.5/5",
+        "description": "This is not an many use in all people"
+    },
+    {
+        "id": 13,
+        "sm_pic": "https://i.ibb.co/mXr4HdN/walton.jpg",
+        "name": "Walton R10",
+        "brandname": "Walton",
+        "type": "Phone",
+        "price": 13000,
+        "rating": "4/5",
+        "description": "This is lowest price in all branded phone"
+    },
+    {
+        "id": 14,
+        "sm_pic": "https://i.ibb.co/TgvbsLG/walton-fridge.jpg",
+        "name": "Walton Fridge",
+        "brandname": "Walton",
+        "type": "Fridge",
+        "price": 39000,
+        "rating": "4.5/5",
+        "description": "This electronic device engine also powefull suplier in all fridge"
+    },
+    {
+        "id": 15,
+        "sm_pic": "https://i.ibb.co/kx8NcMb/walton-micro.jpg",
+        "name": "Walton Micro Oven",
+        "brandname": "Walton",
+        "type": "Micro Oven",
+        "price": 26000,
+        "rating": "4.5/5",
+        "description": "This is used to safe the food in all time"
+    },
+    {
+        "id": 16,
+        "sm_pic": "https://i.ibb.co/mRBWdmF/walton-cooker.jpg",
+        "name": "Walton Cooker",
+        "brandname": "Walton",
+        "type": "Cooker",
+        "price": 11000,
+        "rating": "4/5",
+        "description": "It is very usefull for heeting Food"
+    },
+    {
+        "id": 17,
+        "sm_pic": "https://i.ibb.co/xLpgv12/intel.png",
+        "name": "Intel Leptop",
+        "brandname": "Intel",
+        "type": "Leptop",
+        "price": 50000,
+        "rating": "4.5/5",
+        "description": "This device is also used in businessman people"
+    },
+    {
+        "id": 18,
+        "sm_pic": "https://i.ibb.co/2M9j4qM/intel-pc.png",
+        "name": "Intel Desktop",
+        "brandname": "Intel",
+        "type": "PC",
+        "price": 38000,
+        "rating": "4.5/5",
+        "description": "This electronic device is the most useful in all countries"
+    },
+    {
+        "id": 19,
+        "sm_pic": "https://i.ibb.co/F6spYMf/intel-procesor.jpg",
+        "name": "core i5th",
+        "brandname": "Intel",
+        "type": "processor",
+        "price": 8000,
+        "rating": "4/5",
+        "description": "This item category is type of 5th genaration"
+    },
+    {
+        "id": 20,
+        "sm_pic": "https://i.ibb.co/f4TPH4q/intel-procesor2.jpg",
+        "name": "core i9th",
+        "brandname": "Intel",
+        "type": "processor",
+        "price": 12000,
+        "rating": "5/5",
+        "description": "It is also powerful processor in The desktop"
     }
 ]

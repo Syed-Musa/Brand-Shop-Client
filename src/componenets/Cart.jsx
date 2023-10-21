@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const Cart = ({brand, brands, setBrands}) => {
 
-    const {_id, name, brandname, choose, price, description, photo} = brand;
+    const {_id, name, brandname, choose, price, rating, description, photo} = brand;
 
     const handleDelete = _id =>{
         console.log(_id);
@@ -21,7 +21,7 @@ const Cart = ({brand, brands, setBrands}) => {
             if (result.isConfirmed) {
               
 
-              fetch(`http://localhost:5000/mycart/${_id}`, {
+              fetch(`https://brand-shop-server-9xp4u4f8r-syed-musa.vercel.app/mycart/${_id}`, {
                 method: 'DELETE'
               })
               .then(res => res.json())
@@ -44,7 +44,7 @@ const Cart = ({brand, brands, setBrands}) => {
   return (
     <div>
       <div className="card card-side bg-base-100 shadow-xl">
-        <figure>
+        <figure className="py-10 pl-10">
           <img className="w-60 h-full" src={photo} alt="Movie" />
         </figure>
         <div className="card-body">
@@ -52,6 +52,7 @@ const Cart = ({brand, brands, setBrands}) => {
           <p className="font-bold italic">Brand Name: {brandname}</p>
           <p className="font-bold italic">Choose: {choose}</p>
           <p className="font-bold italic">Price: {price}</p>
+          <p className="font-bold italic">Ratings: {rating}</p>
           <p className="font-bold italic">Description: {description}</p>
           <div className="card-actions justify-end">
             <button onClick={()=> handleDelete(_id)} className="btn bg-red-600 font-bold text-white">X</button>

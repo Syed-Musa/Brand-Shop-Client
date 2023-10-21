@@ -48,11 +48,11 @@ const ExtraLogin = () => {
 
     return (
         <div>
-            <h2 className='text-2xl font-bold my-5 text-center'>Continue With</h2>
+            <h2 className='text-2xl text-white font-bold my-5 text-center'>Continue With</h2>
             {
-                user ? <button onClick={handleGoogleSignOut} className='btn btn-outline w-full text-[15px] font-bold'>Google LogOut<FaGoogle className='text-xl text-white'></FaGoogle></button> :
+                user ? <button onClick={handleGoogleSignOut} className='btn btn-outline text-white w-full text-[15px] font-bold'>Google LogOut<FaGoogle className='text-xl text-white'></FaGoogle></button> :
                 <>
-                    <button onClick={handleGoogleSignIn} className='btn btn-outline w-full text-[15px] font-bold my-2'>
+                    <button onClick={handleGoogleSignIn} className='btn btn-outline text-white w-full text-[15px] font-bold my-2'>
                         <FaGoogle className='text-xl text-white'></FaGoogle>Google Login
                     </button>
                     
@@ -66,7 +66,7 @@ const ExtraLogin = () => {
                     <img className='mx-auto' src={user?.photoURL} alt="" />
                 </div>
             }
-            <button onClick={handleGithubSignIn} className='btn btn-outline w-full text-[15px] font-bold'>
+            <button onClick={handleGithubSignIn} className='btn btn-outline text-white w-full text-[15px] font-bold'>
                 <FaGithub className='text-xl text-white'></FaGithub>Github Login
             </button>
         </div>
